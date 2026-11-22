@@ -7,9 +7,8 @@ sakuma_skaits = len(df)
 df = df.drop_duplicates()
 dublikati = sakuma_skaits - len(df)
 
-pirms = len(df)
 df = df.dropna()
-trukstosas = pirms - len(df)
+trukstosas = sakuma_skaits - len(df)
 
 df.to_csv('tirs.csv', index=False)
 
